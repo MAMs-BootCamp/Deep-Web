@@ -30,12 +30,35 @@ function addItem(array, item) {
 }
 
 function search(array, string) {
-    if (!string) {
-       return array 
-    }
+  if (!string) {
+    return array
+  }
   return array.filter((e) =>
     e.name.toLowerCase().includes(string.toLowerCase().trim()),
   )
 }
 
-module.exports = { creatItem, addItem, search }
+function editItem(item, name, price, category, img, amount) {
+  item = {
+    name: name && typeof name === 'string' ? name : item.name,
+    price: price && typeof price === 'number' ? price : item.price,
+    category: category && typeof category === 'string' ? category : item.category,
+    img: img && typeof img === 'string' ? img : item.img,
+    amount: amount && typeof amount === 'number' ? amount : item.amount,
+  }
+  return item;
+}
+
+function removeItem(array, item) {
+  return array.filter(e => e.id !== item.id)
+}
+
+function sortingArray(array) {
+  return array.sort((a, b) => a.price - b.price);
+}
+
+function filterCategory(array, string) {
+  return array.filter(e => e.category === string);
+}
+
+module.exports = { creatItem, addItem, search, editItem, removeItem, sortingArray, filterCategory }
