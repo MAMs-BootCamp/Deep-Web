@@ -29,4 +29,13 @@ function addItem(array, item) {
   return array
 }
 
-module.exports = { creatItem, addItem }
+function search(array, string) {
+    if (!string) {
+       return array 
+    }
+  return array.filter((e) =>
+    e.name.toLowerCase().includes(string.toLowerCase().trim()),
+  )
+}
+
+module.exports = { creatItem, addItem, search }
