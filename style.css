@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10px;
+}
+
+:root {
+  --mainColor: rgb(167, 0, 0);
+  --secColor: rgb(255, 2, 2);
+  --background: black;
+  --textColor: white;
+}
+
+body {
+  background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*! page 1 */
+.mainImg {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--textColor);
+  width: 90%;
+}
+
+header {
+  text-align: center;
+  color: var(--mainColor);
+  font-size: 6rem;
+}
+
+.choicesTitle {
+  color: var(--secColor);
+  font-size: 3.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.choicesBtns {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.buyerBtn button,
+.sellerBtn button {
+  width: 25rem;
+  background-color: black;
+  color: var(--textColor);
+  border: 0.1rem solid var(--secColor);
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 1rem;
+}
+
+.buyerBtn :hover,
+.sellerBtn :hover {
+  border: 0.5rem solid var(--secColor);
+}
+
+.choicesImg {
+  width: 10rem;
+  opacity: 0;
+  transition: 0.5s ease-in-out all;
+}
+
+.buyerBtn :hover,
+.sellerBtn :hover {
+  border: 0.5rem solid var(--secColor);
+}
+
+.choiceBuyer:hover .choicesImg,
+.choiceSeller:hover .choicesImg {
+  opacity: 1;
+}
+
+/*! End of page 1 */
+
+/*! media queries */
+@media (max-width: 770px) {
+  .headingTitle {
+    font-size: 7rem;
+  }
+
+  .choicesImg {
+    display: none;
+  }
+
+  .choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainImg {
+    width: 20rem;
+  }
+
+  main {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center !important;
+  }
+}
+/*! End of media queries */
