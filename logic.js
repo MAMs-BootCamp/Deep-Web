@@ -25,8 +25,8 @@ function creatItem(name, price, category, img, amount) {
   }
 }
 function addItem(array, item) {
-  array.push(item)
-  return array
+  array.push(item);
+  return array;
 }
 
 function search(array, string) {
@@ -61,4 +61,4 @@ function filterCategory(array, string) {
   return array.filter(e => e.category === string);
 }
 
-module.exports = { creatItem, addItem, search, editItem, removeItem, sortingArray, filterCategory }
+// module.exports = { creatItem, addItem, search, editItem, removeItem, sortingArray, filterCategory }
