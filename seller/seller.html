@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./seller.css">
+    <title>Seller Page</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="../imgs/2.webp">
+        <input class="search" type="text" name="" id="" placeholder="search here">
+        <a class="buyer-btn" href="../buyer.html">Buyer</a>
+    </header>
+
+    <h1 class="seller-title">Well done killing and bringing the body, record the parts you want to sell</h1>
+
+    <section class="product-form ">
+        
+        <form >
+            <label for="productName">Product Name</label>
+            <input type="text" id="product-name" required placeholder="Product Name" />
+            
+            <label for="category">Category</label>
+            <select name="cars" id="category">
+                <option value="item1">Item1</option>
+                <option value="item2">Item2</option>
+                <option value="item3">Item3</option>
+                <option value="item4">Item4</option>
+            </select>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" required placeholder="Description"></textarea>
+            
+            <label for="imgLink">Image Link</label>
+            <input type="text" id="img-link" required placeholder="Image Link" />
+            
+            <label for="price">Price</label>
+            <input type="text" id="price" required placeholder="Price" />
+            
+            <div class="formBtns">
+                <button class="submit" type="submit">Submit</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
+        </form>
+
+<section class="seller-products"></section>
+    </section>
+
+    <script src="../logic.js"></script>
+    <script src="./domSeller.js"></script>
+</body>
+
+</html>

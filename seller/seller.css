@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --mainColor: rgb(167, 0, 0);
+  --secColor: rgb(255, 2, 2);
+  --background: black;
+  --textColor: white;
+  --inputsBack: rgba(170, 157, 157, 0.516);
+}
+
+html{
+    font-size: 10px;
+}
+
+
+
+img{
+    width: 50px;
+}
+
+body{
+    /* margin: 2rem auto; */
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: .3rem solid var(--secColor);
+    padding: 1rem 0;
+}
+
+.search{
+background: var(--inputsBack);
+color: var(--textColor);
+}
+
+.buyer-btn{
+    color: var(--mainColor);
+    font-size: 2rem;
+}
+
+.seller-title{
+color: var(--secColor);
+font-weight: 100;
+max-width: 80%;
+text-align: center;
+margin: 0 auto;
+}
+
+
+/* FORM SECTION */
+
+
+.product-form form {
+  width:35rem;
+  padding: 2rem;
+  background-color: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: .1rem solid var(--secColor);
+}
+
+.product-form input,
+select {
+  display: block;
+  width: 100%;
+  margin: .5rem 0;
+  padding: .4rem;
+}
+
+.product-form label {
+  display: block;
+  margin-top: .2rem;
+  color: var(--mainColor);
+}
+
+textarea {
+  padding: .7rem;
+  height: 9rem;
+  width: 100%;
+  margin: 1rem 0;
+  background: var(--inputsBack)
+
+}
+
+.product-form .formBtns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margin: 1rem 0; */
+}
+
+
+.submit {
+  margin-top: 4rem;
+  background: crimson;
+  color: white;
+  padding: .8rem;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: .6rem;
+  margin-bottom: 1rem;
+}
+
+.reset {
+  background: white;
+  color: var();
+  padding: .6rem;
+  border: 1;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: .6rem;
+  /* margin-bottom: 2rem; */
+  border-color: var(--mainColor);
+}
+
+.product-form label {
+    font-size: 1.5rem;
+}
+.product-form input, select {
+  background: var(--inputsBack)
+}
+
+/* SELLER PRODUCTS */
+
+.product-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    color: var(--textColor);
+    gap: 3rem;
+}
+
+
+
+
